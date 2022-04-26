@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues-ads.html 
+keywords: astra, control center, ads, data store, bugs, known issues, problems 
+summary: 既知の問題は、このリリースの製品を正常に使用できない可能性のある問題を特定します。 
+---
+= Astra データストアのプレビューおよびこの Astra Control Center リリースでの既知の問題
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+既知の問題は、このリリースの製品を正常に使用できない可能性のある問題を特定します。
+
+次の既知の問題は、この最新リリースの Astra Control Center で Astra データストアの管理に影響を与えます。
+
+
+
+== MongoDB ポッドの活性プローブに障害が発生したため、 Astra データストアプレビューを Astra Control Center のストレージクラスとして使用できない
+
+Astra Control Center の導入時に、ストレージクラスのプロビジョニングツールとして Astra Data Store プレビューを使用しようとすると、 MongoDB の活性性プローブが失敗し、導入が完了しなくなります。
+
+この問題を修正するには、の完了時に、 YAML の標準の変更に加えて、次の変更を行います link:../get-started/install_acc.html#configure-astra-control-center["Astra Control Center のインストールプロセス"]：
+
+. を編集します link:../get-started/install_acc.html#configure-the-astra-control-center-operator["Astra Control Center オペレータによる YAML の導入（ Astra _control_center_operator_deployment.yaml ）"] Helm のインストールタイムアウトを変更するには：
++
+[listing]
+----
+- name: ACCOP_HELM_INSTALLTIMEOUT
+  value: 20m
+----
+. を編集します link:../get-started/install_acc.html#configure-astra-control-center["Astra Control Center カスタムリソース（ CR ）ファイル（ Astra_control_center_min YAML ）"] そして 'spec' の下にハイライト表示された追加値を含めます
++
+[listing, subs="+quotes"]
+----
+apiVersion: astra.netapp.io/v1
+kind: AstraControlCenter
+metadata:
+  name: astra
+*spec:*
+  accountName: "Example"
+  astraVersion: "ASTRA_VERSION"
+  astraAddress: "astra.example.com"
+  autoSupport:
+    enrolled: true
+  email: "[admin@example.com]"
+  firstName: "SRE"
+  lastName: "Admin"
+  imageRegistry:
+    name: "[your_registry_path]"
+    secret: "astra-registry-cred"
+  storageClass: "ontap-gold"
+  *additionalValues:*
+    *polaris-mongodb:*
+      *mongodb:*
+        *livenessProbe:*
+          *initialDelaySeconds: 400*
+      *metrics:*
+        *livenessProbe:*
+          *initialDelaySeconds: 400*
+----
+
+
+
+
+== Astra Control Center が、 Astra データストアプレビューストレージバックエンドを不明な状態で表示
+
+Astra Control Center は、 Astra Data Store プレビューストレージバックエンドを UI のバックエンドページから「 Unknown 」状態で表示します。この状況では、ストレージバックエンドを実際に使用でき、通信可能です。ストレージバックエンド内のコンポーネントは正常な状態ではない可能性があり ' ストレージバックエンドが利用可能と表示されるためには正常な状態に戻す必要があります
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../release-notes/resolved-issues.html["解決済みの問題"]
+* link:../release-notes/known-issues.html["既知の問題"]
+* link:../release-notes/known-limitations.html["既知の制限"]
+* https://docs.netapp.com/us-en/astra-data-store/index.html["Astra データストアのドキュメント"]
+
