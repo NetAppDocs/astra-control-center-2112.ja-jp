@@ -1763,7 +1763,6 @@
   <block id="1c2989d4329c8aeec5e01506816fb04e" category="list-text">使用<block ref="4b0bc63f683ccbf4dcf0ba2a6a1b561f" category="inline-link-rx"></block>。</block>
   <block id="94bcffc8ff8a109a8267202d2aaa5526" category="list-text">NSS でケースにバンドルを直接添付します。</block>
   <block id="ba89649946424eac67d48305f146fb4f" category="list-text">NetApp AIQ を使用</block>
-  <block id="0a560904c58e3cede88c521d796e1617" category="sidebar">Astra Control Center のドキュメント</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">以前のバージョン</block>
   <block id="0798c457df65a765c2a3aace627c312b" category="sidebar">Astra Control Center の利用を開始しましょう</block>
   <block id="41babe56ec27c9b39ecab6c854265300" category="sidebar">Astra Control Center の詳細をご確認ください</block>
@@ -1815,4 +1814,5 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">よく寄せられる質問</block>
   <block id="ae5601e1a5453d0b5924098584b9c3f2" category="sidebar">このリリースの Astra Control Center の新機能</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="aa42d5edad3eb6d4a82eb3923c8ffb14" category="sidebar">Astra Control Center 21.12のドキュメント</block>
 </blocks>

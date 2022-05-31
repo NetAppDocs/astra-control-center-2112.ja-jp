@@ -9,7 +9,7 @@ settings:
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: Astra Control Center のドキュメント
+  - title: Astra Control Center 21.12のドキュメント
     url: "/index.html"
   - section: release-notes
   - section: concepts
@@ -100,4 +100,6 @@ homepage:
       url: https://cloud.netapp.com/kubernetes-hub
     - title: サポートへのアクセス
       url: "/support/get-help.html"
-product-family: {}
+product-family:
+  name: Astra
+  repo: astra-family
