@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/astra-control-center-2112/issues/new?body=Page%3A%20[Helm チャートから MariaDB を導入します](https://docs.netapp.com/ja-jp/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/astra-control-center-2112/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/astra-control-center-2112/blob/main/solutions/mariadb-deploy-from-helm-chart.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/astra-control-center-2112/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/astra-control-center-2112/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/astra-control-center-2112/issues/new?body=Page%3A%20[Helm チャートから MariaDB を導入します](https://docs.netapp.com/ja-jp/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/astra-control-center-2112/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/astra-control-center-2112/blob/main/solutions/mariadb-deploy-from-helm-chart.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/astra-control-center-2112/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/astra-control-center-2112/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ja-jp/astra-control-center-2112/search.html"
           data-type="widget" 
-          data-placeholder="ドキュメントを検索" 
-          data-no-results-found="{query}に該当する結果はありません" 
-          data-did-you-mean="{suggestion} を検索" 
-          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-          data-results-found="{hitCount} 件見つかりました"  
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/astra-control-center-2112/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/astra-control-center-2112/solutions/mariadb-deploy-from-helm-chart.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
+    <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>利用可能なPDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/ja-jp/astra-control-center-2112/pdfs/fullsite-sidebar/Astra_Control_Center_21_12_ドキュメント.pdf" >
-          <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
+          <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>このドキュメントサイトのPDF</a>
 
 
 
@@ -374,7 +368,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/リリースノート.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             リリースノート
           </a>
           
@@ -388,8 +382,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -409,7 +401,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/概念.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             概念
           </a>
           
@@ -423,8 +415,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -444,7 +434,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/はじめに.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             はじめに
           </a>
           
@@ -464,7 +454,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/インストールの概要.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             インストールの概要
           </a>
           
@@ -472,8 +462,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -493,7 +481,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/Astra_Control_Center_をセットアップします.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             Astra Control Center をセットアップします
           </a>
           
@@ -501,8 +489,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -512,8 +498,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -533,7 +517,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/Astra_を使用する.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             Astra を使用する
           </a>
           
@@ -549,7 +533,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アプリの管理.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アプリの管理
           </a>
           
@@ -557,8 +541,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -578,7 +560,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アプリを保護します.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アプリを保護します
           </a>
           
@@ -602,14 +584,12 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アプリケーション実行フックを管理します.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アプリケーション実行フックを管理します
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -617,8 +597,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -638,7 +616,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アプリケーションとクラスタの健常性を表示します.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アプリケーションとクラスタの健常性を表示します
           </a>
           
@@ -648,8 +626,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -669,7 +645,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アカウントを管理します.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アカウントを管理します
           </a>
           
@@ -683,8 +659,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -706,8 +680,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -727,14 +699,12 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/REST_API_で自動化.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             REST API で自動化
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -754,20 +724,13 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/アプリケーションの導入.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             アプリケーションの導入
           </a>
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/astra-control-center-2112/pdfs/pages/solutions/mariadb-deploy-from-helm-chart.pdf" >
-    <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
@@ -775,8 +738,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -796,7 +757,7 @@
               href="/ja-jp/astra-control-center-2112/pdfs/sidebar/知識とサポート.pdf" 
             
           >
-            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/astra-control-center-2112/images/pdf.png" alt="" width="16" height="16"/>
             知識とサポート
           </a>
           
@@ -804,8 +765,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -816,11 +775,10 @@
 
 
 
-
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/ja-jp/astra-control-center-2112/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/ja-jp/astra-control-center-2112/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>個別のPDFドキュメントのコレクション<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -853,7 +811,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/astra-control-center-2112/index.html">
         Astra Control Center 21.12のドキュメント
       </a></li><li class="subfolders "><a href="/ja-jp/astra-control-center-2112/release-notes/rn_overview.html">
@@ -1369,4 +1327,5 @@ Astra Control Center では、最初にクラスタを Astra Control Center に�
     </script>
     <script src='/ja-jp/astra-control-center-2112/js/www-ntap.js'></script>
     <script src='/ja-jp/astra-control-center-2112/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/astra-control-center-2112/js/sidebar.js'></script>
   </body></html>
