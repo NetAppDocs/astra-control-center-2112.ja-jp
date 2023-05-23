@@ -193,13 +193,13 @@ Astra Control Center をホストする運用環境は、次の TCP ポートを
 | 指標利用者 | Astra Control Center ワーカーノード | 9090 | HTTPS | メトリックデータ通信 - 各管理対象クラスタが、アストラコントロールセンターをホストしているクラスタ上のこのポートにアクセスできることを確認します （双方向通信が必要） 
 
 
-| Astra Control Center の略 | Hosted Cloud Insights サービスの略 (https://cloudinsights.netapp.com)[] | 443 | HTTPS | Cloud Insights 通信 
+| Astra Control Center の略 | Hosted Cloud Insights サービスの略  | 443 | HTTPS | Cloud Insights 通信 
 
 
-| Astra Control Center の略 | Amazon S3 ストレージバケットプロバイダ (https://my-bucket.s3.us-west-2.amazonaws.com/)[] | 443 | HTTPS | Amazon S3 ストレージ通信 
+| Astra Control Center の略 | Amazon S3 ストレージバケットプロバイダ  | 443 | HTTPS | Amazon S3 ストレージ通信 
 
 
-| Astra Control Center の略 | ネットアップの ActiveIQ (https://activeiq.solidfire.com)[] | 443 | HTTPS | ネットアップの ActiveIQ 通信 
+| Astra Control Center の略 | ネットアップの ActiveIQ  | 443 | HTTPS | ネットアップの ActiveIQ 通信 
 |===
 
 
