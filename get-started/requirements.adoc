@@ -199,7 +199,7 @@ Astra Control Center をホストする運用環境は、次の TCP ポートを
 | Astra Control Center の略 | Amazon S3 ストレージバケットプロバイダ  | 443 | HTTPS | Amazon S3 ストレージ通信 
 
 
-| Astra Control Center の略 | ネットアップの ActiveIQ  | 443 | HTTPS | ネットアップの ActiveIQ 通信 
+| Astra Control Center の略 | Digital Advisor(https://activeiq.solidfire.com[]） | 443 | HTTPS | デジタルアドバイザのコミュニケーション 
 |===
 
 
